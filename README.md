@@ -9,7 +9,7 @@ please reconfigure it using `--enable-post-processing`, then recompile, and will
 
 ### `janus-pp-rec` file
 
-The `janus-pp-rec` executable file has been cmopiled under alpine linux 3.6 so this docker image is based on that OS.
+The provided `janus-pp-rec` executable file has been compiled under alpine linux 3.6 so this docker image is based on that OS.
  
 ## Usage
 
