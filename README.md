@@ -2,6 +2,8 @@
 
 This is a utility from [Janus](https://janus.conf.meetecho.com/) team to convert mjr files created with Janus to standard formats.
 
+I am not associated in any way with Janus or Meetecho, I'm just providing this tool.
+
 This version of the utility ships as Docker container so it needs docker to run, if you have compiled Janus by yourself and want to use this utility,
 please reconfigure it using `--enable-post-processing`, then recompile, and will find the utility under `/opt/janus/bin/janus-pp-rec`.
 
