@@ -7,6 +7,9 @@ I am not associated in any way with Janus or Meetecho, I'm just providing this t
 This version of the utility ships as Docker container so it needs docker to run, if you have compiled Janus by yourself and want to use this utility,
 please reconfigure it using `--enable-post-processing`, then recompile, and will find the utility under `/opt/janus/bin/janus-pp-rec`.
 
+### `janus-pp-rec` file
+
+The `janus-pp-rec` executable file has been cmopiled under alpine linux 3.6 so this docker image is based on that OS.
  
 ## Usage
 
