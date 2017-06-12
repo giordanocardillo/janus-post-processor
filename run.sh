@@ -14,7 +14,7 @@
 
 set -e
 
-IMAGE="giordanocardillo/janus-post-processor"
+IMAGE="giordanocardillo/janus-post-processor:mjr2webm"
 
 
 # Setup options for connecting to docker host
