@@ -7,14 +7,11 @@
 #   * $(pwd)
 #   * $HOME if it's set
 #
-# You can add additional volumes (or any docker run options) using
-# the $COMPOSE_OPTIONS environment variable.
-#
 
 
 set -e
 
-IMAGE="giordanocardillo/janus-post-processor:mjr2webm"
+IMAGE="giordanocardillo/janus-post-processor"
 
 
 # Setup options for connecting to docker host
@@ -28,7 +25,7 @@ else
 fi
 
 
-# Setup volume mounts for compose config and context
+# Setup volume mounts for context
 if [ "$(pwd)" != '/' ]; then
     VOLUMES="-v $(pwd):$(pwd)"
 fi
@@ -45,4 +42,4 @@ if [ -t 0 ]; then
     DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS -i"
 fi
 
-exec docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $IMAGE "$@"
+exec docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $VOLUMES -w "$(pwd)" $IMAGE "$@"
