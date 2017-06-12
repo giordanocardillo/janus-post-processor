@@ -14,14 +14,14 @@ The provided `janus-pp-rec` executable file has been compiled under alpine linux
 ## Usage
 
 1. Download `run.sh` file
-2. Move it to `/usr/local/bin/janus-pp-rec`
-3. Make sure it is executable `chmod a+x /usr/local/bin/janus-pp-rec`
+2. Move it to `/usr/local/bin/mjr2webm`
+3. Make sure it is executable `chmod a+x /usr/local/bin/mjr2webm`
 4. Launch it! 
 
 #### In one line 
 
 ```
-curl -o /usr/local/bin/janus-pp-rec  -L https://raw.githubusercontent.com/giordanocardillo/janus-post-processor/master/run.sh && chmod a+x /usr/local/bin/janus-pp-rec
+curl -o /usr/local/bin/mjr2webm  -L https://raw.githubusercontent.com/giordanocardillo/janus-post-processor/mjr2webm/run.sh && chmod a+x /usr/local/bin/mjr2webm
 ```
 
 
