@@ -16,7 +16,8 @@ The provided `janus-pp-rec` executable file has been compiled under alpine linux
 1. Download `run.sh` file
 2. Move it to `/usr/local/bin/mjr2webm`
 3. Make sure it is executable `chmod a+x /usr/local/bin/mjr2webm`
-4. Launch it! 
+4. Launch it inside recordings folder
+5. Enjoy your webms! 
 
 #### In one line 
 
