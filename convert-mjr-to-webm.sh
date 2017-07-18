@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-FILES=./*video.mjr
+FILES=$(find ./ -name '*video.mjr')
 FAILED=""
 
 if [ ! -x "$(command -v ffmpeg)" ]; then
