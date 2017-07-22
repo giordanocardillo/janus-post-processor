@@ -22,7 +22,7 @@ The provided `janus-pp-rec` executable file has been compiled under alpine linux
 #### In one line 
 
 ```
-curl -o /usr/local/bin/mjr2webm -L https://github.com/giordanocardillo/janus-post-processor/releases/download/v1.0/run.sh && chmod a+x /usr/local/bin/mjr2webm
+curl --fail -L https://github.com/giordanocardillo/janus-post-processor/releases/download/1.0/run.sh > /usr/local/bin/mjr2webm && chmod a+x /usr/local/bin/mjr2webm
 ```
 
 
