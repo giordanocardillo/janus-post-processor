@@ -1,3 +1,5 @@
+[![Docker Stars](https://img.shields.io/docker/stars/giordanocardillo/janus-post-processor.svg?style=flat-square)](https://hub.docker.com/r/giordanocardillo/janus-post-processor/) [![Docker Pulls](https://img.shields.io/docker/pulls/giordanocardillo/janus-post-processor.svg?style=flat-square)](https://hub.docker.com/r/giordanocardillo/janus-post-processor/) [![Docker Automated build](https://img.shields.io/docker/automated/giordanocardillo/janus-post-processor.svg?style=flat-square)](https://hub.docker.com/r/giordanocardillo/janus-post-processor/)
+
 # Janus Recordings Post Processor
 
 This is a utility from [Janus](https://janus.conf.meetecho.com/) team to convert mjr files created with Janus to standard formats.
