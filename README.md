@@ -22,9 +22,7 @@ The provided `janus-pp-rec` executable file has been compiled under alpine linux
 #### In one line 
 
 ```
-curl --fail -L https://github.com/giordanocardillo/janus-post-processor/releases/download/1.0/run.sh > /usr/local/bin/mjr2webm && chmod a+x /usr/local/bin/mjr2webm
+curl --fail -L https://github.com/giordanocardillo/janus-post-processor/releases/download/1.0/mjr2webm > /usr/local/bin/mjr2webm && chmod a+x /usr/local/bin/mjr2webm
 ```
 
-
 The first time it will download the container (It is something about 40 MB, it contains also full ffmpeg) then run the utility
-
