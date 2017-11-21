@@ -11,7 +11,7 @@
 
 set -e
 
-IMAGE="giordanocardillo/janus-post-processor"
+IMAGE="giordanocardillo/janus-post-processor:mp4"
 
 
 # Setup options for connecting to docker host

@@ -16,15 +16,15 @@ The provided `janus-pp-rec` executable file has been compiled under alpine linux
 ## Usage
 
 1. Download `run.sh` file
-2. Move it to `/usr/local/bin/mjr2webm`
-3. Make sure it is executable `chmod a+x /usr/local/bin/mjr2webm`
+2. Move it to `/usr/local/bin/mjr2mp4`
+3. Make sure it is executable `chmod a+x /usr/local/bin/mjr2mp4`
 4. Launch it inside recordings folder
 5. Enjoy your webms! 
 
 #### In one line 
 
 ```
-curl --fail -L https://github.com/giordanocardillo/janus-post-processor/releases/download/1.0/mjr2webm > /usr/local/bin/mjr2webm && chmod a+x /usr/local/bin/mjr2webm
+curl --fail -L https://github.com/giordanocardillo/janus-post-processor/releases/download/1.0-mp4/mjr2mp4 > /usr/local/bin/mjr2mp4 && chmod a+x /usr/local/bin/mjr2mp4
 ```
 
 The first time it will download the container (It is something about 40 MB, it contains also full ffmpeg) then run the utility
