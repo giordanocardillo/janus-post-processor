@@ -25,16 +25,16 @@ do
   if [ -f $filename"-audio.mjr" ]; then
     printf "\033[36mProcessing\033[0m $filename\n"
     printf "  -> \033[35mExtracting video\033[0m\n"
-    janus-pp-rec $video /tmp/janus-recordings/video.mp4 >/dev/null 2>&1
+    janus-pp-rec $video /tmp/janus-recordings/video.webm >/dev/null 2>&1
     RESULT=$?
     printf "  -> \033[35mExtracting audio\033[0m\n"
     janus-pp-rec $filename"-audio.mjr" /tmp/janus-recordings/audio.opus >/dev/null 2>&1
     RESULT=$?
     printf "  -> \033[33mMerging\033[0m\n"
-    ffmpeg -i /tmp/janus-recordings/audio.opus -i /tmp/janus-recordings/video.mp4 -y -c:v copy -c:a aac -b:a 160k $filename.mp4  >/dev/null 2>&1
+    ffmpeg -i /tmp/janus-recordings/audio.opus -i /tmp/janus-recordings/video.webm -y -c:v libx264 -preset medium -tune zerolatency -c:a aac -b:a 160k $filename.mp4  >/dev/null 2>&1
     RESULT=$?
     if [ $RESULT -eq 0 ]; then
-      rm -rf /tmp/janus-recordings/video.mp4
+      rm -rf /tmp/janus-recordings/video.webm
       rm -rf /tmp/janus-recordings/audio.opus
       rm -rf "$filename"*.mjr
       printf "  -> \033[32mComplete\033[0m\n"
