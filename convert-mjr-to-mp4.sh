@@ -31,7 +31,7 @@ do
     janus-pp-rec $filename"-audio.mjr" /tmp/janus-recordings/audio.opus >/dev/null 2>&1
     RESULT=$?
     printf "  -> \033[33mMerging\033[0m\n"
-    ffmpeg -i /tmp/janus-recordings/audio.opus -i /tmp/janus-recordings/video.webm -y -c:v libx264 -preset medium -tune zerolatency -c:a aac -b:a 160k $filename.mp4  >/dev/null 2>&1
+    ffmpeg -i /tmp/janus-recordings/audio.opus -i /tmp/janus-recordings/video.webm -y -c:v libx264 -c:a aac -b:a 160k $filename.mp4  >/dev/null 2>&1
     RESULT=$?
     if [ $RESULT -eq 0 ]; then
       rm -rf /tmp/janus-recordings/video.webm
